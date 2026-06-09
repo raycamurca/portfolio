@@ -1,6 +1,6 @@
 # 🌐 Portfolio
 
-Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar meus projetos, minha evolução como desenvolvedor Front-end e servir como ponto central dos meus trabalhos.
+Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar meus projetos, minha evolução como desenvolvedor e servir como ponto central dos meus trabalhos.
 
 ---
 
