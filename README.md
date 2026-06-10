@@ -20,7 +20,7 @@ Esta seção registra a evolução do portfólio ao longo do desenvolvimento, mo
 
 ### 🎨 Estrutura Inicial
 
-📸 *Adicione aqui uma imagem do HTML base ou wireframe.*
+![Wireframe do Portfólio](src/assets/images/wireframe.png)
 
 Primeira versão do projeto, focada na estruturação do conteúdo.
 
