@@ -1,0 +1,9 @@
+/* Header */
+
+.nav .nav-list .nav-item a:hover {
+    color: var(--header-link-hover);
+}
+
+.card-theme:hover {
+    background: var(--hover-icon-theme);
+}

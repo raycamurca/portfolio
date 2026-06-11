@@ -16,8 +16,8 @@
     --surface: #f8fafc;
     --border: #e2e8f0;
     --primary: #0284c7;
-    --ring: #0284c7;
     --muted-foreground: #475569;
+    --icon: #000000;
 
     /* Header */
     --header-bg-top: transparent;
@@ -26,6 +26,11 @@
     --header-logo: linear-gradient(135deg, #0284c7, #0ea5e9);
     --header-link: #475569;
     --header-link-hover: #0f172a;
+    --hover-icon-theme: #0285c73b;
+
+    /* Nav */
+
+    --bg-nav: #f8fafcf7;
 
     /* Início (Hero) */
     --hero-bg: radial-gradient(ellipse at top, rgba(2, 132, 199, 0.12), transparent 60%), #ffffff;
@@ -93,8 +98,8 @@
     --surface: #1e293b;
     --border: #1e293b;
     --primary: #38bdf8;
-    --ring: #38bdf8;
     --muted-foreground: #cbd5e1;
+    --icon: #ffffff;
 
     /* Header */
     --header-bg-scrolled: linear-gradient(0deg, rgba(30, 41, 59, 0.55), rgba(30, 41, 59, 0.55));
@@ -102,6 +107,11 @@
     --header-logo: linear-gradient(135deg, #38bdf8, #0ea5e9);
     --header-link: #cbd5e1;
     --header-link-hover: #f8fafc;
+    --hover-icon-theme: #0285c743;
+
+    /* Nav */
+
+    --bg-nav: #111827f7;
 
     /* Início (Hero) */
     --hero-bg: radial-gradient(ellipse at top, rgba(56, 189, 248, 0.18), transparent 60%), #0f172a;
@@ -169,7 +179,10 @@ html {
 }
 
 body {
+    background: var(--background);
+    color: var(--foreground);
     min-height: 100vh;
+    min-width: 100%;
     font-family: "Inter", sans-serif;
     font-size: clamp(1rem, 1vw, 1.125rem);
     line-height: 1.6;
@@ -219,5 +232,92 @@ img {
     max-width: 100%;
 }
 
+i {
+    color: var(--icon);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 /* Header */
 
+.header {
+    position: fixed;
+    z-index: 2;
+    top: -1px;
+    width: 100%;
+    background: var(--header-bg-top);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+    padding: 10px 25px;
+}
+
+.header.scrolled {
+    background: var(--header-bg-scrolled);
+    border-bottom: 2px solid var(--header-border);
+}
+
+.header .child-header .logo-dev a span {
+    background: var(--header-logo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.child-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-dev a {
+    font-weight: 800;
+}
+
+.nav {
+    display: none;
+}
+
+.nav.active {
+    background: var(--bg-nav);
+    border: 2px solid var(--border);
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+}
+
+.nav.active .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+
+.nav .nav-list .nav-item a {
+    color: var(--header-link);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons .card-theme, .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(45px, 5vw, 47px);
+    height: clamp(45px, 5vw, 47px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+}
+
+.action-buttons .card-theme i, .menu-btn i {
+    font-size: clamp(15px, 5vw, 20px);
+}
