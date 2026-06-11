@@ -18,6 +18,7 @@
     --primary: #0284c7;
     --muted-foreground: #475569;
     --icon: #000000;
+    --color-opposite: #ffffff;
 
     /* Header */
     --header-bg-top: transparent;
@@ -34,15 +35,15 @@
 
     /* Início (Hero) */
     --hero-bg: radial-gradient(ellipse at top, rgba(2, 132, 199, 0.12), transparent 60%), #ffffff;
-    --hero-blob-1: rgba(2, 132, 199, 0.20);
-    --hero-blob-2: rgba(2, 132, 199, 0.10);
-    --hero-badge-dot: #10b981;
     --hero-title: #0f172a;
     --hero-accent: linear-gradient(135deg, #0284c7, #0ea5e9);
     --hero-subtitle: #475569;
     --hero-cta-primary: linear-gradient(0deg, #0284c7, #0284c7);
     --hero-cta-outline-border: #e2e8f0;
-    --hero-avatar-glow: linear-gradient(45deg, rgba(2, 132, 199, 0.30), transparent);
+    --shadow-1: 0 25px 50px rgba(2, 133, 199, 0.416);
+    --shadow-2: 0 0 120px rgba(2, 133, 199, 0.393);
+    --shadow-3: 0 0 200px rgba(14, 164, 233, 0.333);
+    --shadow-4: 0 0 300px rgba(2, 133, 199, 0.068);
 
     /* Sobre */
     --about-bg: #ffffff;
@@ -100,6 +101,7 @@
     --primary: #38bdf8;
     --muted-foreground: #cbd5e1;
     --icon: #ffffff;
+    --color-opposite: #000000;
 
     /* Header */
     --header-bg-scrolled: linear-gradient(0deg, rgba(30, 41, 59, 0.55), rgba(30, 41, 59, 0.55));
@@ -115,15 +117,15 @@
 
     /* Início (Hero) */
     --hero-bg: radial-gradient(ellipse at top, rgba(56, 189, 248, 0.18), transparent 60%), #0f172a;
-    --hero-blob-1: rgba(56, 189, 248, 0.20);
-    --hero-blob-2: rgba(56, 189, 248, 0.10);
-    --hero-badge-dot: #10b981;
     --hero-title: #f8fafc;
     --hero-accent: linear-gradient(135deg, #38bdf8, #0ea5e9);
     --hero-subtitle: #cbd5e1;
     --hero-cta-primary: linear-gradient(0deg, #38bdf8, #38bdf8);
     --hero-cta-outline-border: #1e293b;
-    --hero-avatar-glow: linear-gradient(45deg, rgba(56, 189, 248, 0.30), transparent);
+    --shadow-1: 0 30px 60px rgba(0, 0, 0, 0.6);
+    --shadow-2: 0 0 120px rgba(2, 133, 199, 0.55);
+    --shadow-3: 0 0 220px rgba(14, 164, 233, 0.4);
+    --shadow-4: 0 0 320px rgba(2, 133, 199, 0.08);
 
     /* Sobre */
     --about-bg: #0f172a;
@@ -209,6 +211,7 @@ h3 {
 
 p {
     font-size: clamp(1rem, 1vw, 1.125rem);
+    max-width: 65ch;
 }
 
 button,
@@ -258,6 +261,10 @@ i {
 .header.scrolled {
     background: var(--header-bg-scrolled);
     border-bottom: 2px solid var(--header-border);
+}
+
+.header .child-header .logo-dev a {
+    font-size: clamp(1.3rem, 5vw, 1.7rem);
 }
 
 .header .child-header .logo-dev a span {
@@ -320,4 +327,110 @@ i {
 
 .action-buttons .card-theme i, .menu-btn i {
     font-size: clamp(15px, 5vw, 20px);
+}
+
+/* Hero */
+
+
+    /* 
+    --hero-avatar-glow: linear-gradient(45deg, rgba(2, 132, 199, 0.30), transparent); 
+    */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: var(--hero-bg);
+    color: var(--muted-foreground);
+    padding: 90px 25px;
+}
+
+.child-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero-content .hero-badge {
+    background-color: var(--surface);
+    width: fit-content;
+    padding: 3px 10px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: clamp(14px, 1vw, 17px);
+}
+
+.child-hero .hero-presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-presentation .card-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-name .hero-title-name {
+    color: var(--hero-title);
+}
+
+.hero-presentation .hero-position {
+    color: var(--hero-subtitle);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 700;
+}
+
+.hero-position span {
+    color: var(--hero-title);
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-buttons .btn-project {
+    background: var(--hero-accent);
+    color: var(--color-opposite);
+    width: fit-content;
+    padding: clamp(0.4rem, 1vw, 0.5rem) clamp(1.5rem, 4vw, 2.5rem);
+    border-radius: 20px;
+    border: 1px solid var(--hero-cta-outline-border);
+    font-weight: 500;
+}
+
+.hero-buttons .btn-contact {
+    background: var(--surface);
+    color: var(--foreground);
+    width: fit-content;
+    padding: clamp(0.4rem, 1vw, 0.5rem) clamp(1.5rem, 4vw, 2.5rem);
+    border-radius: 20px;
+    border: 1px solid var(--hero-cta-outline-border);
+    font-weight: 500;
+}
+
+.card-img {
+    display: none;
+}   
+
+.card-img img {
+    display: block;
+    width: 95%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow:
+        var(--shadow-1),
+        var(--shadow-2),
+        var(--shadow-3),
+        var(--shadow-4);
 }
