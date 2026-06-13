@@ -32,7 +32,7 @@ Primeira versão do projeto, focada na estruturação do conteúdo.
 
 ### 🎨 Estilização Inicial
 
-📸 *Adicione aqui uma imagem do site com CSS inicial.*
+![Preview do projeto](src/assets/gif/portfolio.git)
 
 Primeiros passos na parte visual do projeto.
 
