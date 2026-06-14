@@ -51,10 +51,10 @@ Primeiros passos na parte visual do projeto.
   </tr>
   <tr>
     <td>
-      <img src="src/assets/images/mobile.png" width="250">
+      <img src="src/assets/images/hero-mobile.png" width="250">
     </td>
     <td>
-      <img src="src/assets/images/desktop.png" width="700">
+      <img src="src/assets/images/hero-desktop.png" width="700">
     </td>
   </tr>
 </table>
