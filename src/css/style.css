@@ -743,7 +743,7 @@ i {
 }
 
 .form-group input:focus {
-    outline: 2px solid var(--contact-input-ring);
+    outline: 2px solid var(--primary);
 }
 
 .form-group-msg textarea {
@@ -756,7 +756,7 @@ i {
 }
 
 .form-group-msg textarea:focus {
-    outline: 2px solid var(--contact-input-ring);
+    outline: 2px solid var(--primary);
 }
 
 .btn-submit {

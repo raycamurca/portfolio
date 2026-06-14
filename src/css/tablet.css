@@ -28,26 +28,26 @@
 
 /* Hero */
 
-.btn-project {
-    transition: all 0.3s ease-in-out;
+.hero-buttons {
+    flex-direction: row;
+}
+
+.btn-contact {
+    transition: all 0.3s ease;
 }
 
 .btn-project:hover {
     background: var(--primary);
 }
 
-.btn-contact {
-    transition: all 0.3s ease-in-out;
-}
-
 .btn-contact:hover {
-    background: var(--hero-accent);
-    color: var(--background);
+    background: var(--contact-card-hover-bg);
+    color: var(--primary);
 }
 
 /* About */
 
-.child-about {
+.container-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -153,4 +153,12 @@
 .contact-card:hover {
     border: 1px solid var(--primary);
     background: var(--contact-card-hover-bg);
+}
+
+/* Footer */
+
+.footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
