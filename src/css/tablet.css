@@ -138,3 +138,19 @@
     color: var(--foreground);
     background: transparent;
 }
+
+/* Contact */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-card {
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    border: 1px solid var(--primary);
+    background: var(--contact-card-hover-bg);
+}

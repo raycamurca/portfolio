@@ -83,6 +83,7 @@
     --contact-btn: linear-gradient(0deg, #0284c7, #0284c7);
     --contact-icon-bg: #e0f2fe;
     --contact-icon-fg: #0369a1;
+    --contact-card-hover-bg: #e0f2fe;
 
     /* Footer */
     --footer-bg: #f8fafc;
@@ -163,6 +164,7 @@
     --contact-btn: linear-gradient(0deg, #38bdf8, #38bdf8);
     --contact-icon-bg: #1e3a52;
     --contact-icon-fg: #7dd3fc;
+    --contact-card-hover-bg: #1e3a52;
 
     /* Footer */
     --footer-bg: #1e293b;
