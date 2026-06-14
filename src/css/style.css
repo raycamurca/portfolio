@@ -67,7 +67,6 @@
     --projects-bg: #ffffff;
     --projects-card-bg: #ffffff;
     --projects-card-border: #e2e8f0;
-    --projects-img-fallback: #f1f5f9;
     --projects-tag-bg: #e0f2fe;
     --projects-tag-fg: #0369a1;
     --projects-title: #0f172a;
@@ -148,7 +147,6 @@
     --projects-bg: #0f172a;
     --projects-card-bg: #0f172a;
     --projects-card-border: #1e293b;
-    --projects-img-fallback: #1e293b;
     --projects-tag-bg: #1e3a52;
     --projects-tag-fg: #7dd3fc;
     --projects-title: #f8fafc;
@@ -619,7 +617,7 @@ i {
 
 .project-techs {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .project-techs .project-tech {

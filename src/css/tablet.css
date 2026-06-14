@@ -80,11 +80,61 @@
 }
 
 .child-skills .skills-grid .skills-card:hover {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     box-shadow:
         var(--shadow-1),
         var(--shadow-2),
         var(--shadow-3),
         var(--shadow-4);
     border: 2px solid var(--skills-hover-border);
+}
+
+/* Project */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        var(--shadow-1),
+        var(--shadow-2),
+        var(--shadow-3),
+        var(--shadow-4);
+    border: 1px solid var(--primary);
+}
+
+.project-link-git-hub {
+    transition: all 0.3s ease;
+}
+
+.project-link-git-hub:hover {
+    background: var(--primary);
+    color: var(--color-opposite);
+    transform: translateY(-3px);
+}
+
+.project-link-git-hub:hover i {
+    color: var(--color-opposite);
+}
+
+.project-link-deploy {
+    transition: all 0.3s ease;
+}
+
+.project-link-deploy:hover {
+    background: transparent;
+    color: var(--foreground);
+    transform: translateY(-3px);
+}
+
+.project-link-deploy:hover i {
+    color: var(--foreground);
+    background: transparent;
 }
