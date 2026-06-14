@@ -13,6 +13,11 @@
     color: var(--header-link-hover);
 }
 
+.card-theme {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 .card-theme:hover {
     background: var(--hover-icon-theme);
 }
@@ -50,4 +55,36 @@
 
 .about-card {
     padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        var(--shadow-1),
+        var(--shadow-2),
+        var(--shadow-3),
+        var(--shadow-4);
+    border: 2px solid var(--skills-hover-border);
+}
+
+/* Skills */
+
+.child-skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.child-skills .skills-grid .skills-card {
+    transition: all 0.3s ease;
+}
+
+.child-skills .skills-grid .skills-card:hover {
+    transform: translateY(-20px);
+    box-shadow:
+        var(--shadow-1),
+        var(--shadow-2),
+        var(--shadow-3),
+        var(--shadow-4);
+    border: 2px solid var(--skills-hover-border);
 }

@@ -9,3 +9,10 @@
 .card-img {
     display: block;
 }   
+
+/* Skills */
+
+.child-skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
