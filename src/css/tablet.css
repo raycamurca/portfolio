@@ -20,3 +20,22 @@
 .menu-btn {
     display: none;
 }
+
+/* Hero */
+
+.btn-project {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-project:hover {
+    background: var(--primary);
+}
+
+.btn-contact {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+    background: var(--hero-accent);
+    color: var(--background);
+}

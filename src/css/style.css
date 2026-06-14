@@ -345,7 +345,7 @@ i {
     align-items: center;
     background: var(--hero-bg);
     color: var(--muted-foreground);
-    padding: 70px 25px;
+    padding: 100px 25px;
 }
 
 .child-hero {
