@@ -32,7 +32,7 @@ Primeira versão do projeto, focada na estruturação do conteúdo.
 
 ### 🎨 Estilização Inicial
 
-![Preview do projeto](src/assets/gif/portfolio.gif)
+![Preview do projeto](src/assets/gif/gif-portfolio.gif)
 
 Primeiros passos na parte visual do projeto.
 
