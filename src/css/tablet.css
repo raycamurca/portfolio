@@ -39,3 +39,15 @@
     background: var(--hero-accent);
     color: var(--background);
 }
+
+/* About */
+
+.child-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.about-card {
+    padding: 10px;
+}
