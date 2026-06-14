@@ -44,7 +44,20 @@ Primeiros passos na parte visual do projeto.
 
 ### 📱 Responsividade
 
-📸 *Adicione aqui uma imagem em mobile e desktop.*
+<table>
+  <tr>
+    <th>Mobile</th>
+    <th>Desktop</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="src/assets/images/mobile.png" width="250">
+    </td>
+    <td>
+      <img src="src/assets/images/desktop.png" width="700">
+    </td>
+  </tr>
+</table>
 
 Adaptação do layout para diferentes tamanhos de tela.
 
