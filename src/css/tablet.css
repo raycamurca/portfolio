@@ -1,5 +1,14 @@
 /* Header */
 
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
 .nav .nav-list .nav-item a:hover {
     color: var(--header-link-hover);
 }
@@ -8,3 +17,6 @@
     background: var(--hover-icon-theme);
 }
 
+.menu-btn {
+    display: none;
+}

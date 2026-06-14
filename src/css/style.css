@@ -266,13 +266,9 @@ i {
     background: var(--header-bg-top);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--header-border);
     transition: all 0.3s ease;
     padding: 10px 25px;
-}
-
-.header.scrolled {
-    background: var(--header-bg-scrolled);
-    border-bottom: 2px solid var(--header-border);
 }
 
 .header .child-header .logo-dev a {
@@ -349,7 +345,7 @@ i {
     align-items: center;
     background: var(--hero-bg);
     color: var(--muted-foreground);
-    padding: 50px 25px;
+    padding: 70px 25px;
 }
 
 .child-hero {
