@@ -262,6 +262,15 @@ i {
     color: var(--icon);
 }
 
+section {
+  transition: all .5s;
+  scroll-margin-top: 60px;
+}
+
+.about, .skills, .projects, .contact {
+    padding: 30px 25px;
+}
+
 .container {
     max-width: 1280px;
     margin: auto;
@@ -360,7 +369,7 @@ i {
 }
 
 .action-buttons .card-theme i, .menu-btn i {
-    font-size: clamp(15px, 5vw, 20px);
+    font-size: clamp(20px, 5vw, 25px);
 }
 
 /* Hero */
@@ -470,7 +479,6 @@ i {
 .about {
     background: var(--about-bg);
     color: var(--about-text);
-    padding: 90px 25px;
 }
 
 .child-about {
@@ -541,7 +549,6 @@ i {
 
 .skills {
     background: var(--skills-bg);
-    padding: 90px 25px;
 }
 
 .child-skills .content-skills {
@@ -586,7 +593,6 @@ i {
 
 .projects {
     background: var(--projects-bg);
-    padding: 90px 25px;
 }
 
 .content-projects {
@@ -682,7 +688,6 @@ i {
 
 .contact {
     background: var(--contact-bg);
-    padding: 90px 25px;
 }
 
 .content-contact {
