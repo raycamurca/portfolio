@@ -36,13 +36,10 @@ const navLinks = document.querySelectorAll(".nav-link");
 btnMenu.addEventListener("click", showMenu);
 
 function showMenu() {
-  iconMenu.classList.toggle("bi-list");
-  iconMenu.classList.toggle("bi-x-lg");
-  if (iconMenu.classList.contains("bi-x-lg")) {
-    nav.classList.add("active");
-  } else {
-    nav.classList.remove("active");
-  }
+  const isActive = nav.classList.toggle("active");
+  iconMenu.classList.toggle("bi-x-lg", isActive);
+  iconMenu.classList.toggle("bi-list", !isActive);
+  btnMenu.setAttribute("aria-label", isActive ? "Fechar Menu" : "Abrir Menu");
 }
 
 // NAV
@@ -50,9 +47,14 @@ function showMenu() {
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     if (nav.classList.contains("active")) {
-      nav.classList.remove("active");
-      iconMenu.classList.remove("bi-x-lg");
-      iconMenu.classList.add("bi-list");
+      closeMenu();
     }
   });
 });
+
+function closeMenu() {
+  nav.classList.remove("active");
+  iconMenu.classList.remove("bi-x-lg");
+  iconMenu.classList.add("bi-list");
+  btnMenu.setAttribute("aria-label", "Abrir Menu");
+}
