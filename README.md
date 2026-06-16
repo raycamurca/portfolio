@@ -69,7 +69,20 @@ Adaptação do layout para diferentes tamanhos de tela.
 
 ### ⚙️ Interatividade (JavaScript)
 
-📸 *Adicione aqui GIFs ou prints das interações.*
+<table>
+  <tr>
+    <th>Menu</th>
+    <th>Tema</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="src/assets/gif/menu.gif" width="250">
+    </td>
+    <td>
+      <img src="src/assets/gif/theme.gif" width="700">
+    </td>
+  </tr>
+</table>
 
 Implementação das funcionalidades interativas do portfólio.
 
