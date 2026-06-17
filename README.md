@@ -79,7 +79,7 @@ Adaptação do layout para diferentes tamanhos de tela.
       <img src="src/assets/gif/menu.gif" width="250">
     </td>
     <td>
-      <img src="src/assets/gif/theme.gif" width="700">
+      <img src="src/assets/gif/theme.gif" width="500">
     </td>
   </tr>
 </table>
@@ -101,7 +101,7 @@ Implementação das funcionalidades interativas do portfólio.
   </tr>
   <tr>
     <td>
-      <img src="src/assets/gif/current-version.gif" width="950">
+      <img src="src/assets/gif/current-version.gif" width="700">
     </td>
   </tr>
 </table>
