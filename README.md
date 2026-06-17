@@ -95,7 +95,16 @@ Implementação das funcionalidades interativas do portfólio.
 
 ### 🚀 Versão Atual
 
-📸 *Adicione aqui o estado mais recente do projeto.*
+<table>
+  <tr>
+    <th>VERSÃO ATUAL</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="src/assets/gif/current-version.gif" width="950">
+    </td>
+  </tr>
+</table>
 
 Versão mais recente do portfólio, com melhorias contínuas.
 
@@ -120,9 +129,9 @@ Sistema de interface de login com foco em layout e experiência do usuário.
 
 ---
 
-### ✅ To-Do List
+### 🎨 Landing Page
 
-Aplicação para gerenciamento de tarefas com funcionalidades de adicionar, remover e concluir tarefas.
+Página de apresentação desenvolvida com foco em estruturação e design responsivo.
 
 **Status:** ⏳ Planejado
 
@@ -131,9 +140,9 @@ Aplicação para gerenciamento de tarefas com funcionalidades de adicionar, remo
 
 ---
 
-### 🎨 Landing Page
+### ✅ To-Do List
 
-Página de apresentação desenvolvida com foco em estruturação e design responsivo.
+Aplicação para gerenciamento de tarefas com funcionalidades de adicionar, remover e concluir tarefas.
 
 **Status:** ⏳ Planejado
 
